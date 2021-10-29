@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 * {
     margin: 0 0;
     padding: 0 0;
@@ -35,14 +36,13 @@ section.container-1 .form-container {
     width: auto;
     height: auto;
     border-radius: 20px;
-    box-shadow: 1px 1px 3px 5px #5a5a5a;
-    ;
+    box-shadow: 1px 1px 5px 8px #5a5a5a;
 }
 
 section.container-1 .form-container form.form {
     display: grid;
     grid-template-rows: repeat(7, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
     padding-left: 20px;
     padding-right: 110px;
     padding-bottom: 20px;
@@ -51,7 +51,7 @@ section.container-1 .form-container form.form {
 section.container-1 .form-container form.form label.labels {
     display: grid;
     /* grid-auto-flow: row; */
-    grid-gap: 1px;
+    grid-gap: 5px;
     border-bottom: 1px solid #8e81e3;
     border-bottom-width: 100%
 }
@@ -70,6 +70,15 @@ section.container-1 .form-container form.form label.labels select {
     font-family: sans-serif;
     font-weight: 600;
 }
+
+section.container-1 .form-container form.form label.labels select:focus {
+    outline:none;
+}
+
+section.container-1 .form-container form.form label.labels textarea:focus {
+    outline: none;
+}
+
 section.container-1 .form-container form.form .header {
     display: grid;
     place-items: center;
@@ -102,6 +111,11 @@ section.container-1 .form-container form.form label.labels input {
     font-family: sans-serif;
     color: #8a8a8a;
     padding: 10px 0;
+}
+
+section.container-1 .form-container form.form label.labels input:focus {
+    border: none;
+    outline:none;
 }
 
 section.container-1 .form-container form.form label.labels input.selector {
@@ -140,7 +154,7 @@ section.container-1 .form-container form.form label.labels button:hover {
     "span input" 0.3fr
     "button button" 0.7fr /
     1fr 1fr;
-    grid-row-gap: 10px;
+    grid-row-gap: 15px;
     grid-column-gap: 20px;
     justify-content: center;
 }
