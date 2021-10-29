@@ -16,7 +16,61 @@ html {
     scroll-behavior: smooth;
 }
 
+section.container-1 {
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+    background-color: #f7eefd;
+    height: 100vh;
+}
 
+section.container-1 .form-container {
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+}
+
+section.container-1 .form-container form.form {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 20px;
+    padding: 10px 70px;
+}
+
+section.container-1 .form-container form.form label.labels {
+    display: grid;
+    grid-gap: 10px;
+}
+
+section.container-1 .form-container form.form .header {
+    display: grid;
+    place-items: center;
+}
+
+section.container-1 .form-container form.form .header h1 {
+    color: #8e81e3;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+section.container-1 .form-container form.form label.labels span {
+    color: #c1c1c1;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+section.container-1 .form-container form.form label.labels input {
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #8a8a8a;
+}
 
 
 
