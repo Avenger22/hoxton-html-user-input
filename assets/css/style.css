@@ -37,7 +37,7 @@ section.container-1 .form-container {
     height: auto;
     border-radius: 20px;
   /* box-shadow: 1px 1px 5px 8px #5a5a5a; */
-    box-shadow: 1px 2px 2px 7px rgba(223,12,233,0.575);
+    box-shadow: rgb(50, 58, 68) 0px 20px 30px -10px;
 }
 
 
@@ -131,7 +131,8 @@ section.container-1 .form-container form.form label.labels button {
     border-radius: 50px;
     box-shadow: 1px 1px 1px 3px #c1c1c1;
     width: 130%;
-    background: linear-gradient(rgba(223,19,223,0.575),rgba(61,40,258,0.712));
+    /* background: linear-gradient(rgba(223,19,223,0.575),rgba(61,40,258,0.712)); */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 } 
 
 section.container-1 .form-container form.form label.labels button span{
