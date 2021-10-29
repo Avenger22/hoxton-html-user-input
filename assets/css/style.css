@@ -34,30 +34,42 @@ section.container-1 .form-container {
     place-items: center;
     width: auto;
     height: auto;
-    margin-bottom: 10px;
     border-radius: 20px;
+    box-shadow: 1px 1px 3px 5px #5a5a5a;
+    ;
 }
 
 section.container-1 .form-container form.form {
     display: grid;
     grid-template-rows: repeat(7, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
     padding-left: 20px;
-    padding-right: 80px;
+    padding-right: 110px;
+    padding-bottom: 20px;
 }
 
 section.container-1 .form-container form.form label.labels {
     display: grid;
-    grid-auto-flow: row;
+    /* grid-auto-flow: row; */
     grid-gap: 1px;
-    border-bottom: 0.5px solid #8e81e3;
+    border-bottom: 1px solid #8e81e3;
+    border-bottom-width: 100%
 }
 
 section.container-1 .form-container form.form label.labels#special-label {
     border-bottom: none;
-
 }
 
+section.container-1 .form-container form.form label.labels textarea {
+    border: none;
+}
+
+section.container-1 .form-container form.form label.labels select {
+    border: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
 section.container-1 .form-container form.form .header {
     display: grid;
     place-items: center;
@@ -100,9 +112,11 @@ section.container-1 .form-container form.form label.labels input.selector {
 
 section.container-1 .form-container form.form label.labels button {
     padding: 5px 0;
-    width: 120%;
-    background-color: #7c8ae6;
-
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 3px #c1c1c1;
+    width: 130%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 } 
 
 section.container-1 .form-container form.form label.labels button span{
@@ -110,6 +124,35 @@ section.container-1 .form-container form.form label.labels button span{
     font-family: sans-serif;
 }    
 
+section.container-1 .form-container form.form label.labels button:hover {
+    color: #c1c1c1;
+    background-color: #ffffff;
+    transition: 1s;
+}
+
 #special-input {
     /* display: inline-block; */
+}
+
+#special-label {
+    display: grid;
+    grid-template: 
+    "span input" 0.3fr
+    "button button" 0.7fr /
+    1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+#special-input {
+    grid-area: input;
+}
+
+#special-label span {
+    grid-area: span;
+}
+
+button {
+    grid-area: button;
 }

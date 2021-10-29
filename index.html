@@ -22,39 +22,45 @@
                     <h1>Hey There</h1>
                 </div> 
 
-                <label for="" class="labels">
+                <label for="name" class="labels">
                     <span>What's your name ?</span>
-                    <input type="text" placeholder="Enter Your Name: ">
-                   
+                    <input type="text" placeholder="Enter Your Name:" minlength="5" maxlength="20" required>
                 </label> 
 
-                <label for="" class="labels">
+                <label for="email" class="labels">
                     <span>What's your email address ?</span>
-                    <input type="email" placeholder="Enter Your Email address: ">
-                   
+                    <input type="email" placeholder="Enter Your Email address:" required>
                 </label> 
 
-                <label for="" class="labels">
-                    <span>What services are you looking for</span>
-                    <input class="selector" type="text" placeholder="Enter Your Name: ">
-                    
+                <label for="services" class="labels">
+                    <span>What services are you looking for ?</span>
+                    <select name="services" class="services">
+                        <option value="volvo">Choose a Service</option>
+                        <option value="saab">Choose a Service</option>
+                        <option value="mercedes">Choose a Service</option>
+                        <option value="audi">Choose a Service</option>
+                      </select>  
                 </label> 
 
-                <label for="" class="labels">
-                    <span>What is your budget ?</span>
-                    <input class="selector" type="text" placeholder="Enter Your Name: ">
-                
+                <label for="budget" class="labels">
+                    <span>What is your Budget ></span>
+                    <select name="budget" class="budget">
+                        <option value="volvo">Choose a Budget</option>
+                        <option value="saab">Choose a Budget</option>
+                        <option value="mercedes">Choose a Budget</option>
+                        <option value="audi">Choose a Budget</option>
+                      </select>  
                 </label>
 
-                <label for="" class="labels">
+                <label for="tell" class="labels">
                     <span>Anything else you want to tell us ?</span>
-                    <input type="text" placeholder="Enter Your Name: ">
-    
+                    <textarea name="textarea" rows="2" cols="25" placeholder="Write Here:">Write Something:
+                    </textarea>
                 </label> 
             
-                <label for="" class="labels" id="special-label">
+                <label for="checkbox" class="labels" id="special-label">
                     <span>I agree with Terms</span>
-                    <input id="special-input" type="checkbox" name="checkbox">
+                    <input id="special-input" type="checkbox" name="checkbox" required>
                     <button>
                         <span>Submit</span>
                     </button>
