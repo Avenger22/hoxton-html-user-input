@@ -64,6 +64,7 @@ section.container-1 .form-container form.form label.labels#special-label {
 
 section.container-1 .form-container form.form label.labels textarea {
     border: none;
+    resize:none;
 }
 
 section.container-1 .form-container form.form label.labels select {
