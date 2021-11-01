@@ -36,8 +36,8 @@ section.container-1 .form-container {
     width: auto;
     height: auto;
     border-radius: 20px;
-  /* box-shadow: 1px 1px 5px 8px #5a5a5a; */
-    box-shadow: rgb(50, 58, 68) 0px 20px 30px -10px;
+    /*box-shadow: 1px 1px 5px 8px #5a5a5a;
+    */box-shadow: rgb(184, 63, 167) 5px 35px 45px -10px;
 }
 
 
@@ -99,9 +99,9 @@ section.container-1 .form-container form.form .header h1 {
 }
 
 section.container-1 .form-container form.form label.labels span {
-    color: #c1c1c1;
+    color: #051937;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 600;
     font-family: sans-serif;
     letter-spacing: 0.1px;
     font-style: italic;
@@ -124,16 +124,21 @@ section.container-1 .form-container form.form label.labels input:focus {
 section.container-1 .form-container form.form label.labels input.selector {
     font-weight: 600;
     font-size: 14px;
-    color: #5a5a5a;
+    color: #5a5a5a
+}
+
+#special-button-span {
+    color: #ffffff;
 }
 
 section.container-1 .form-container form.form label.labels button {
     padding: 5px 0;
-    border-radius: 50px;
-    box-shadow: 1px 1px 1px 3px #c1c1c1;
+    border-radius: 20px;
+    /* box-shadow: 1px 1px 1px 3px #c1c1c1; */
     width: 130%;
-    /* background: linear-gradient(rgba(223,19,223,0.575),rgba(61,40,258,0.712)); */
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /*background: linear-gradient(rgba(223,19,223,0.575),rgba(61,40,258,0.712));
+    */background-image: linear-gradient(to right top, #0c203f, #004d7a, #008793, #00bf72, #a8eb12);
+    cursor: pointer;
 } 
 
 section.container-1 .form-container form.form label.labels button span{
